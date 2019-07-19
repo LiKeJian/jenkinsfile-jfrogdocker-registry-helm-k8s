@@ -34,8 +34,10 @@ def helmDeploy(Map args) {
 node {
     
     // Setup the Docker Registry (Docker Hub) + Credentials 
-    registry_url = "https://index.docker.io/v1/" // Docker Hub
-    docker_creds_id = "bakuppus-dockerhub" // name of the Jenkins Credentials ID
+    registry_url = "https://stockpile-baladockerreg1.jfrog.io/v1/" // Jfrog Docker REPO
+    //registry_url = "https://index.docker.io/v1/" // Docker Hub
+    //docker_creds_id = "bakuppus-dockerhub" // name of the Jenkins Credentials ID
+    docker_creds_id = "jfrog-seshang-credentials" // name of the Jenkins Credentials ID
     //build_tag = "1.0" // default tag to push for to the registry
     build_tag = "${BUILD_NUMBER}" // default tag to push for to the registry
     
