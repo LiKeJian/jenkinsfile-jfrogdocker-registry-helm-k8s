@@ -9,11 +9,7 @@ image:
   tag: latest
   pullPolicy: IfNotPresent
 
-<<<<<<< HEAD
-imagePullSecrets: 
-=======
 imagePullSecrets:
->>>>>>> 1f41934d17c2adabf625641359148fc8ab87813d
   secret: jfrog-seshang-credentials
 
 service:
