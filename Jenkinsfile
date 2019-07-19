@@ -46,7 +46,8 @@ node {
     def chart_dir = "${pwd}/helm"
         
     stage 'Checking out GitHub Repo'
-    git url: 'https://github.com/bakuppus/jenkinsfile-dockerhub-helm-k8s.git'
+    //git url: 'https://github.com/bakuppus/jenkinsfile-dockerhub-helm-k8s.git'
+    git url: 'https://github.com/bakuppus/jenkinsfile-jfrogdocker-registry-helm-k8s.git'
     
     def inputFile = readFile('config.json')
     def config = new groovy.json.JsonSlurperClassic().parseText(inputFile)
