@@ -9,8 +9,8 @@ image:
   tag: latest
   pullPolicy: IfNotPresent
 
-imagePullSecrets: []
-nameOverride: ""
+imagePullSecrets:
+nameOverride: "jfrog-seshang-credentials"
 fullnameOverride: ""
 
 service:
