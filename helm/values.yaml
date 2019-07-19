@@ -9,8 +9,8 @@ image:
   tag: latest
   pullPolicy: IfNotPresent
 
-imagePullSecrets:
-  secret: jfrog-seshang-credentials
+#imagePullSecrets:
+#  secret: jfrog-seshang-credentials
 
 service:
   type: ClusterIP
