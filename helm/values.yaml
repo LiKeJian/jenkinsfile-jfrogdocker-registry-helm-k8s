@@ -8,11 +8,9 @@ image:
   repository: stockpile-baladockerreg1.jfrog.io/amazonlinux-httpd
   tag: latest
   pullPolicy: Always
-  pullSecret: jfrog-seshang-credentials
 
-imagePullSecrets: []
-nameOverride: ""
-fullnameOverride: ""
+imagePullSecrets: 
+  secret: jfrog-seshang-credentials
 
 service:
   type: ClusterIP
