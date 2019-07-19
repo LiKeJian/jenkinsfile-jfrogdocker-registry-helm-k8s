@@ -8,9 +8,10 @@ image:
   repository: stockpile-baladockerreg1.jfrog.io/amazonlinux-httpd
   tag: latest
   pullPolicy: IfNotPresent
+  pullSecret: jfrog-seshang-credentials
 
-imagePullSecrets:
-nameOverride: "jfrog-seshang-credentials"
+imagePullSecrets: []
+nameOverride: ""
 fullnameOverride: ""
 
 service:
