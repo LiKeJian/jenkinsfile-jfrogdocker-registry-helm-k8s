@@ -7,7 +7,7 @@ replicaCount: 1
 image:
   repository: stockpile-baladockerreg1.jfrog.io/amazonlinux-httpd
   tag: latest
-  pullPolicy: IfNotPresent
+  pullPolicy: Always
   pullSecret: jfrog-seshang-credentials
 
 imagePullSecrets: []

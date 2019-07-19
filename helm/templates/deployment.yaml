@@ -16,7 +16,8 @@ spec:
         app.kubernetes.io/name: {{ include "helm.name" . }}
         app.kubernetes.io/instance: {{ .Release.Name }}
     spec:
-      imagePullSecrets: {{ .Values.image.pullSecret }}
+      imagePullSecrets: 
+      - name:  {{ .Values.image.pullSecret }}
       containers:
         - name: {{ .Chart.Name }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
